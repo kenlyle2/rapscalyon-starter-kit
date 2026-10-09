@@ -1,0 +1,15 @@
+{
+  "name": "rapscalyon-starter-kit",
+  "owner": {
+    "name": "RapScalYon"
+  },
+  "plugins": [
+    {
+      "name": "rapscalyon-starter-kit",
+      "source": "./",
+      "description": "Verify-on-stop gate and pre-compaction transcript archive for Claude Code.",
+      "version": "0.1.0"
+    }
+  ],
+  "description": "RapScalYon Starter Kit for Claude Code: guardrails that cost nothing to run."
+}

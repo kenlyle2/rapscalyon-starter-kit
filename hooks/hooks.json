@@ -1,0 +1,11 @@
+{
+  "description": "Starter Kit: verify before finishing, archive before compaction.",
+  "hooks": {
+    "Stop": [
+      { "hooks": [{ "type": "command", "command": "\"${CLAUDE_PLUGIN_ROOT}/scripts/verify-on-stop.sh\"", "timeout": 600 }] }
+    ],
+    "PreCompact": [
+      { "hooks": [{ "type": "command", "command": "\"${CLAUDE_PLUGIN_ROOT}/scripts/precompact-archive.sh\"", "timeout": 15 }] }
+    ]
+  }
+}

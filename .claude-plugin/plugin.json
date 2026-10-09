@@ -1,0 +1,8 @@
+{
+  "name": "rapscalyon-starter-kit",
+  "version": "0.1.0",
+  "description": "Guardrails for Claude Code that cost nothing to run: a verify-before-finishing gate and a transcript archive before compaction.",
+  "author": { "name": "RapScalYon" },
+  "license": "AGPL-3.0-or-later",
+  "keywords": ["hooks", "verification", "guardrails"]
+}
