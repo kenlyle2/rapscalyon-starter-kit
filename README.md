@@ -49,6 +49,10 @@ Neither is required, and this plugin does not depend on them.
 
 AGPL-3.0-or-later. See `LICENSE`.
 
+## Decisions
+
+Why the kit is built this way, and the traps found on the way: `DECISIONS.md`.
+
 ## Test
 
 ```
