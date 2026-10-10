@@ -50,4 +50,10 @@ Why the Starter Kit is built the way it is. Each entry records something that is
 
 **Decision:** the kit was written after evaluating `jsamitt/proof-claude-plugin`, a solo-developer harness with 11 skills, 4 reviewer agents and 4 hooks. Only the ideas of a verify-before-finishing gate and a pre-compaction archive were taken. The code here is a rewrite.
 **Why not the rest:** its planning skills duplicate DeepWorkPlan, its workflow requires a GitHub Projects board, and the repository carries no license file, so nothing could be reused.
-**Not done:** its destructive-command and protected-path guards and its adversarial reviewer agents were not adopted. The reviewer prompts were not read in full.
+**Not done:** its destructive-command and protected-path guards were not adopted.
+
+## 2026-10-10 — Proof's reviewer agents read; none adopted
+
+**Decision:** the four reviewer agents (correctness, breaker, risk, design) were read in full and none is added to the kit.
+**Why:** they are prompts, not enforcement, and the kit's purpose is hooks that need no judgment. Correctness duplicates what Claude Code's own review does. Design only works with a project's design tokens wired in. Two ideas are worth remembering for a future reviewer: the breaker must reproduce a failure (an exact input and the wrong output) before calling it critical, and the risk reviewer starts from risks the project itself declares and says plainly when a diff does not touch them.
+**Not done:** no reviewer agent is shipped; revisit if a client asks for one.
